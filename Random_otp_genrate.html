@@ -1,0 +1,19 @@
+<html>
+
+<body>
+    <button onclick="myotp()">generate</button>
+    <p id="p1"></p>
+<script>
+
+
+    // otp example using random
+    function myotp()
+    {
+        var a = Math.random() * 1000000;
+        var otp = parseInt(a);
+        document.getElementById('p1').innerText = 'your otp is :  '+otp
+        
+    }
+</script>
+</body>
+</html>
